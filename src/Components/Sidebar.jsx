@@ -12,7 +12,7 @@ const Sidebar = () => {
           <img src="" alt="" />
         </div>
         <div className="info flex sm:items-center items-start justify-center flex-col gap-1 sm:gap-2">
-        <div className="name sm:text-[34px] text-2xl text-white font-Josefin font-medium sm:tracking-[0.72px] tracking-[0.22px]">
+        <div className="name sm:text-[34px] text-2xl text-white font-Josefin font-medium sm:tracking-[0.72px] tracking-[0.22px] whitespace-nowrap">
           Mahmudul Hasan
         </div>
         <div className="tag sm:text-base text-xs text-white font-Outfit font-light sm:tracking-[0.92px] tracking-[0.52px] bg-[#3c3f84] px-4 py-1 sm:py-[6px] sm:rounded-[8px] rounded-[5px]">
