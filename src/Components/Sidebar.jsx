@@ -6,27 +6,27 @@ import { TbMailFilled } from 'react-icons/tb'
 
 const Sidebar = () => {
   return (
-    <div className='bg-[#1C1E53] sm:py-10 sm:px-4 p-3 sm:rounded-[14px] rounded-[10px] flex sm:flex-col sm:gap-10 justify-start sm:justify-center items-center relative'>
+    <div className='bg-[#171717] sm:py-10 sm:px-4 p-3 sm:rounded-[14px] rounded-[10px] flex sm:flex-col sm:gap-10 justify-start sm:justify-center items-center relative  shadow-[22px_30px_95px_1px_rgba(0, 0, 0, 0.70)]'>
       <div className="profile flex sm:flex-col items-center justify-center sm:gap-8 gap-5">
-        <div className="img bg-[#3c3f84] sm:rounded-[14px] rounded-[10px] w-[80px] h-[80px] sm:w-[150px] sm:h-[150px]">
+        <div className="img bg-[#373738] sm:rounded-[14px] rounded-[10px] w-[80px] h-[80px] sm:w-[150px] sm:h-[150px]">
           <img src="" alt="" />
         </div>
         <div className="info flex sm:items-center items-start justify-center flex-col gap-1 sm:gap-2">
-        <div className="name sm:text-[34px] text-2xl text-white font-Josefin font-medium sm:tracking-[0.72px] tracking-[0.22px] whitespace-nowrap">
+        <div className="name sm:text-[34px] text-2xl text-[#FCD980] font-Josefin font-medium sm:tracking-[0.72px] tracking-[0.22px] whitespace-nowrap">
           Mahmudul Hasan
         </div>
-        <div className="tag sm:text-base text-xs text-white font-Outfit font-light sm:tracking-[0.92px] tracking-[0.52px] bg-[#3c3f84] px-4 py-1 sm:py-[6px] sm:rounded-[8px] rounded-[5px]">
+        <div className="tag sm:text-base text-xs text-[#F5F5F5] font-Outfit font-light sm:tracking-[0.92px] tracking-[0.52px] bg-[#373738] px-4 py-1 sm:py-[6px] sm:rounded-[8px] rounded-[5px]">
           Web Developer
         </div>
         </div>
       </div>
-      <div className="drop absolute top-0 right-0 sm:hidden flex justify-center items-center p-1 bg-[#3c3f84] rounded-s-none rounded-tr-[10px] rounded-bl-[10px]">
+      <div className="drop absolute top-0 right-0 sm:hidden flex justify-center items-center p-1 bg-[#373738] rounded-s-none rounded-tr-[10px] rounded-bl-[10px]">
       <FaAngleDown className='text-[#FCD980]'/>
       </div>
       <div className="line hidden sm:flex w-[90%] h-[1px] bg-slate-400"></div>
       <div className="contacts hidden sm:flex flex-col gap-8 items-start justify-center">
         <div className="child flex items-center justify-center gap-4">
-          <div className="icon p-2  bg-[#161640] rounded-lg shadow-[0px_0px_23px_3px_rgba(22,22,64,1)]">
+          <div className="icon p-2  bg-[#373738] rounded-lg">
             <TbMailFilled className='text-lg text-[#FCD980]'/>
           </div>
           <div className="text">
@@ -39,7 +39,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="child flex items-center justify-center gap-4">
-          <div className="icon p-2  bg-[#161640] rounded-lg shadow-[0px_0px_23px_3px_rgba(22,22,64,1)]">
+          <div className="icon p-2  bg-[#373738] rounded-lg">
             <MdPhoneAndroid className='text-lg text-[#FCD980]'/>
           </div>
           <div className="text">
@@ -52,7 +52,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="child flex items-center justify-center gap-4">
-          <div className="icon p-2  bg-[#161640] rounded-lg shadow-[0px_0px_23px_3px_rgba(22,22,64,1)]">
+          <div className="icon p-2  bg-[#373738] rounded-lg">
             <FaGithub className='text-lg text-[#FCD980]'/>
           </div>
           <div className="text">
@@ -65,7 +65,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="child flex items-center justify-center gap-4">
-          <div className="icon p-2  bg-[#161640] rounded-lg shadow-[0px_0px_23px_3px_rgba(22,22,64,1)]">
+          <div className="icon p-2  bg-[#373738] rounded-lg">
             <FaLinkedinIn className='text-lg text-[#FCD980]'/>
           </div>
           <div className="text">
