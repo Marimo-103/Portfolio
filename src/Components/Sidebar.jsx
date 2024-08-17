@@ -3,13 +3,14 @@ import { BsTwitterX } from 'react-icons/bs'
 import { FaAngleDown, FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, } from 'react-icons/fa'
 import { MdPhoneAndroid } from 'react-icons/md'
 import { TbMailFilled } from 'react-icons/tb'
+import watashi1 from '../../public/Common Images/MHE.png'
 
 const Sidebar = () => {
   return (
     <div className='bg-[#171717] sm:py-10 sm:px-4 p-3 sm:rounded-[14px] rounded-[10px] flex sm:flex-col sm:gap-10 justify-start sm:justify-center items-center relative  shadow-[22px_30px_95px_1px_rgba(0, 0, 0, 0.70)]'>
       <div className="profile flex sm:flex-col items-center justify-center sm:gap-8 gap-5">
-        <div className="img bg-[#373738] sm:rounded-[14px] rounded-[10px] w-[80px] h-[80px] sm:w-[150px] sm:h-[150px]">
-          <img src="" alt="" />
+        <div className="img bg-[#373738] sm:rounded-[14px] rounded-[10px] w-[80px] h-[80px] sm:w-[150px] sm:h-[150px] overflow-hidden">
+          <img src={watashi1} alt="" className='bg-[#0000007f]'/>
         </div>
         <div className="info flex sm:items-center items-start justify-center flex-col gap-1 sm:gap-2">
         <div className="name sm:text-[34px] text-2xl text-[#FCD980] font-Josefin font-medium sm:tracking-[0.72px] tracking-[0.22px] whitespace-nowrap">
