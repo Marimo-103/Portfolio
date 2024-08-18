@@ -1,6 +1,12 @@
 import React from 'react'
 import { MdRebaseEdit } from 'react-icons/md'
+import { PiBracketsCurlyBold } from 'react-icons/pi'
+import { SiKalilinux } from 'react-icons/si'
 import { TbDeviceDesktopCode } from 'react-icons/tb'
+import client01 from '/Home Images/avatar-1.png'
+import client02 from '/Home Images/avatar-2.png'
+import client03 from '/Home Images/avatar-3.png'
+
 
 const Home = () => {
   return (
@@ -18,10 +24,10 @@ const Home = () => {
       {/* what i do */}
       <section id="doings" className='sm:pt-20 pt-12 sm:px-5 px-2'>
         <div className='main'>
-          <h2 className='text-2xl sm:text-5xl text-[#FFF] font-Josefin font-bold sm:font-semibold tracking-[0.55px]'>
+          <h2 className='text-2xl sm:text-4xl text-[#FFF] font-Josefin font-bold sm:font-semibold tracking-[0.55px]'>
             What I'm Doing
           </h2>
-          <div className="box flex items-center justify-start sm:gap-8 gap-4 flex-wrap sm:mt-12 mt-5">
+          <div className="box1 flex items-center justify-start sm:gap-8 gap-4 sm:flex-nowrap flex-wrap sm:mt-12 mt-5">
             <div className="chid sm:p-5 p-[10px] bg-[#1E1E1E] sm:rounded-xl rounded-lg border border-[#dcca8756] flex gap-4">
               <div className="icon">
               <MdRebaseEdit className='sm:text-4xl text-xl text-[#DCCA87]'/>
@@ -31,7 +37,7 @@ const Home = () => {
                   Web Design
                 </h3>
                 <p className='sm:text-base text-xs font-Outfit text-[#F5F5F3] sm:tracking-[0.92px] tracking-[0.52px]'>
-                  I build responsive and dynamic web applications using React, <br className='sm:block hidden'/> Tailwind CSS and other technologies.
+                  I build responsive and dynamic web applications using React, Tailwind CSS and other technologies.
                 </p>
               </div>      
             </div>
@@ -44,44 +50,95 @@ const Home = () => {
                   Web Development
                 </h3>
                 <p className='sm:text-base text-xs font-Outfit text-[#F5F5F3] sm:tracking-[0.92px] tracking-[0.52px]'>
-                  I build responsive and dynamic web applications using React, <br className='sm:block hidden'/> Tailwind CSS and other technologies.
+                  I build responsive and dynamic web applications using React, Tailwind CSS and other technologies.
                 </p>
               </div>
             </div>
-            {/* <div className="chid p-5 bg-[#1E1E1E] rounded-xl border border-[#dcca8756] flex gap-4">
-              <div className="icon">
-              <TbDeviceDesktopCode className='text-4xl text-[#DCCA87]'/>
-              </div>      
-              <div className="text">
-                <h3 className='text-2xl text-white font-Outfit font-medium tracking-[1.28px]'>
-                  Web Development
-                </h3>
-                <p className='text-base text-[#F5F5F3]'>
-                  I build responsive and dynamic web applications using React, <br /> Tailwind CSS and other technologies.
-                </p>
-              </div>
-            </div>
-            <div className="chid p-5 bg-[#1E1E1E] rounded-xl border border-[#dcca8756] flex gap-4">
-              <div className="icon">
-              <TbDeviceDesktopCode className='text-4xl text-[#DCCA87]'/>
-              </div>      
-              <div className="text">
-                <h3 className='text-2xl text-white font-Outfit font-medium tracking-[1.28px]'>
-                  Web Development
-                </h3>
-                <p className='text-base text-[#F5F5F3]'>
-                  I build responsive and dynamic web applications using React, <br /> Tailwind CSS and other technologies.
-                </p>
-              </div>
-            </div> */}
           </div>
+          {/* <div className="box2 flex items-center justify-start sm:gap-8 gap-4 sm:flex-nowrap flex-wrap sm:mt-12 mt-4">
+            <div className="chid sm:p-5 p-[10px] bg-[#1E1E1E] sm:rounded-xl rounded-lg border border-[#dcca8756] flex gap-4">
+              <div className="icon">
+              <PiBracketsCurlyBold className='sm:text-4xl text-xl text-[#DCCA87]'/>
+              </div>      
+              <div className="text">
+                <h3 className='sm:text-2xl text-xl text-white font-Outfit font-medium sm:tracking-[1.28px] tracking-[1.48px] mb-1'>
+                  C Programming
+                </h3>
+                <p className='sm:text-base text-xs font-Outfit text-[#F5F5F3] sm:tracking-[0.92px] tracking-[0.52px]'>
+                  I build responsive and dynamic web applications using React, Tailwind CSS and other technologies.
+                </p>
+              </div>      
+            </div>
+            <div className="chid sm:p-5 p-[10px] bg-[#1E1E1E] sm:rounded-xl rounded-lg border border-[#dcca8756] flex gap-4">
+              <div className="icon">
+              <SiKalilinux className='sm:text-4xl text-xl text-[#DCCA87]'/>
+              </div>      
+              <div className="text">
+                <h3 className='sm:text-2xl text-xl text-white font-Outfit font-medium sm:tracking-[1.28px] tracking-[1.48px] mb-1'>
+                  Linux Expert
+                </h3>
+                <p className='sm:text-base text-xs font-Outfit text-[#F5F5F3] sm:tracking-[0.92px] tracking-[0.52px]'>
+                  I build responsive and dynamic web applications using React, Tailwind CSS and other technologies.
+                </p>
+              </div>
+            </div>
+          </div> */}
         </div>
       </section>
 
       {/* testimonials */}
       <section id="testimonials" className='sm:pt-20 pt-12 sm:px-5 px-2'>
         <div className="main">
-          
+          <h2 className='text-2xl sm:text-4xl text-[#FFF] font-Josefin font-bold sm:font-semibold tracking-[0.55px] mb-14'>
+          Testimonials
+          </h2>
+          <div className="boxes flex flex-col sm:flex-row sm:gap-8 gap-8 items-center justify-center">
+            <div className='child sm:border border-l border-b sm:border-[#dcca8759] border-[#dcca8796] sm:p-5 p-3 rounded-xl hover:scale-[1.1] transition-all duration-300 sm:hover:border-[#DCCA87]'>
+              <div className="name bg-[#171717] w-fit flex gap-3 items-center justify-center sm:mt-[-53px] mt-[-35px] ml-1">
+                <div className="img sm:w-[60px] w-[40px] sm:h-[60px] h-[40px] bg-[#373738] overflow-hidden rounded-xl">
+                    <img src={client01} alt="" />
+                </div>
+                <h4 className='sm:text-xl text-lg text-[#dcca87] font-Outfit font-medium tracking-[0.54px]'>
+                    Richard Reins
+                </h4>
+              </div>
+              <div className="comment sm:mt-2 mt-3">
+                <p className='sm:text-base text-xs text-[#F5F5F3] font-Josefin tracking-[0.28px] sm:tracking-[0.11px]'>
+                    I've been using this product for a while now, and I have to say, it's been good.
+                </p>
+              </div>
+            </div>
+            <div className='child sm:border border-r border-b sm:border-[#dcca8759] border-[#dcca8796] sm:p-5 p-3 rounded-xl hover:scale-[1.1] transition-all duration-300 sm:hover:border-[#DCCA87]'>
+              <div className="name bg-[#171717] w-fit flex flex-row-reverse sm:flex-row gap-3 items-center justify-center sm:mt-[-53px] mt-[-35px] ml-auto sm:ml-1">
+                <div className="img sm:w-[60px] w-[40px] sm:h-[60px] h-[40px] bg-[#373738] overflow-hidden rounded-xl">
+                    <img src={client02} alt="" />
+                </div>
+                <h4 className='sm:text-xl text-lg text-[#dcca87] font-Outfit font-medium tracking-[0.54px]'>
+                    Erza Scarlet
+                </h4>
+              </div>
+              <div className="comment sm:mt-2 mt-3">
+                <p className='sm:text-base text-xs text-[#F5F5F3] font-Josefin tracking-[0.28px] sm:tracking-[0.11px] text-end sm:text-start'>
+                    I've been using this product for a while now, and I have to say, it's been good.
+                </p>
+              </div>
+            </div>
+            <div className='child sm:border border-l border-b sm:border-[#dcca8759] border-[#dcca8796] sm:p-5 p-3 rounded-xl hover:scale-[1.1] transition-all duration-300 sm:hover:border-[#DCCA87]'>
+              <div className="name bg-[#171717] w-fit flex gap-3 items-center justify-start sm:mt-[-53px] mt-[-35px] ml-1">
+                <div className="img sm:w-[60px] w-[40px] sm:h-[60px] h-[40px] bg-[#373738] overflow-hidden rounded-xl">
+                    <img src={client03} alt="" />
+                </div>
+                <h4 className='sm:text-xl text-lg text-[#dcca87] font-Outfit font-medium tracking-[0.54px]'>
+                    Savannah Seth
+                </h4>
+              </div>
+              <div className="comment sm:mt-2 mt-3">
+                <p className='sm:text-base text-xs text-[#F5F5F3] font-Josefin tracking-[0.28px] sm:tracking-[0.11px]'>
+                    I've been using this product for a while now, and I have to say, it's been good.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

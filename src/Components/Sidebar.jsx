@@ -3,7 +3,7 @@ import { BsTwitterX } from 'react-icons/bs'
 import { FaAngleDown, FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, } from 'react-icons/fa'
 import { MdPhoneAndroid } from 'react-icons/md'
 import { TbMailFilled } from 'react-icons/tb'
-import watashi1 from '../../public/Common Images/MHE.png'
+import watashi1 from '/Common Images/MHE.png'
 
 const Sidebar = () => {
   return (
