@@ -6,11 +6,13 @@ import { TbDeviceDesktopCode } from 'react-icons/tb'
 import client01 from '/Home Images/avatar-1.png'
 import client02 from '/Home Images/avatar-2.png'
 import client03 from '/Home Images/avatar-3.png'
+import Profile from '../Layers/profile'
+import { ImStack } from 'react-icons/im'
 
 
 const Home = () => {
   return (
-    <div className='bg-[#171717]'>
+    <div className='bg-[#171717] rounded-bl-[10px] rounded-br-[10px] sm:rounded-bl-[14px] sm:rounded-br-[14px]'>
       {/* intro */}
       <section id='intro' className='pt-12 sm:px-5 px-2'>
         <div className="main">
@@ -27,7 +29,7 @@ const Home = () => {
           <h2 className='text-2xl sm:text-4xl text-[#FFF] font-Josefin font-bold sm:font-semibold tracking-[0.55px]'>
             What I'm Doing
           </h2>
-          <div className="box1 flex items-center justify-start sm:gap-8 gap-4 sm:flex-nowrap flex-wrap sm:mt-12 mt-5">
+          <div className="box1 flex items-center justify-start sm:gap-8 gap-4 sm:flex-nowrap flex-wrap sm:mt-8 mt-5">
             <div className="chid sm:p-5 p-[10px] bg-[#1E1E1E] sm:rounded-xl rounded-lg border border-[#dcca8756] flex gap-4">
               <div className="icon">
               <MdRebaseEdit className='sm:text-4xl text-xl text-[#DCCA87]'/>
@@ -37,7 +39,7 @@ const Home = () => {
                   Web Design
                 </h3>
                 <p className='sm:text-base text-xs font-Outfit text-[#F5F5F3] sm:tracking-[0.92px] tracking-[0.52px]'>
-                  I build responsive and dynamic web applications using React, Tailwind CSS and other technologies.
+                  I build creative and professional web designs using Figma that encourages every developer to start building.
                 </p>
               </div>      
             </div>
@@ -86,14 +88,54 @@ const Home = () => {
         </div>
       </section>
 
+      {/* What am I doing */}
+      <section id="" className='sm:pt-20 pt-12 sm:px-5 px-2'>
+        <div className="main">
+          <h2 className='text-2xl sm:text-4xl text-[#FFF] font-Josefin font-bold sm:font-semibold tracking-[0.55px]'>
+              What I'm Learning
+          </h2>
+          <p className='text-sm sm:text-base text-[#FFF] font-Josefin tracking-[0.28px] mt-2'>
+            Apparently, along with Desinging & Developing I'm learing to outrun my present from and accquire much more heights in the future. Some of my mentionable growing skills are :
+          </p>
+          <div className="info sm:ml-8 ml-4 sm:mt-6 mt-3">
+            <div className='flex flex-col sm:gap-5 gap-3'>
+              <div className='flex items-center gap-3'>
+                <div className="icon">
+                  <ImStack className='sm:text-2xl text-xl text-[#DCCA87]'/>
+                </div>
+                <div className="text sm:text-xl text-base text-[#F5F5F3] font-Josefin tracking-[0.35px]">
+                  MERN Stack
+                </div>
+              </div>
+              <div className='flex items-center gap-3'>
+                <div className="icon">
+                  <SiKalilinux className='sm:text-2xl text-xl text-[#DCCA87]'/>
+                </div>
+                <div className="text sm:text-xl text-base text-[#F5F5F3] font-Josefin tracking-[0.35px]">
+                  Kali Linux
+                </div>
+              </div>
+              <div className='flex items-center gap-3'>
+                <div className="icon">
+                  <PiBracketsCurlyBold className='sm:text-2xl text-xl text-[#DCCA87]'/>
+                </div>
+                <div className="text sm:text-xl text-base text-[#F5F5F3] font-Josefin tracking-[0.35px]">
+                  C / C++ Programming
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* testimonials */}
-      <section id="testimonials" className='sm:pt-20 pt-12 sm:px-5 px-2'>
+      <section id="testimonials" className='sm:pt-20 pb-2 sm:pb-4 py-12 sm:px-5 px-2'>
         <div className="main">
           <h2 className='text-2xl sm:text-4xl text-[#FFF] font-Josefin font-bold sm:font-semibold tracking-[0.55px] mb-14'>
           Testimonials
           </h2>
           <div className="boxes flex flex-col sm:flex-row sm:gap-8 gap-8 items-center justify-center">
-            <div className='child sm:border border-l border-b sm:border-[#dcca8759] border-[#dcca8796] sm:p-5 p-3 rounded-xl hover:scale-[1.1] transition-all duration-300 sm:hover:border-[#DCCA87]'>
+            <div className='child sm:border border-l border-b sm:border-[#dcca8759] border-[#dcca8796] sm:p-5 p-3 rounded-xl sm:hover:scale-[1.1] transition-all duration-300 sm:hover:border-[#DCCA87]'>
               <div className="name bg-[#171717] w-fit flex gap-3 items-center justify-center sm:mt-[-53px] mt-[-35px] ml-1">
                 <div className="img sm:w-[60px] w-[40px] sm:h-[60px] h-[40px] bg-[#373738] overflow-hidden rounded-xl">
                     <img src={client01} alt="" />
@@ -108,7 +150,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className='child sm:border border-r border-b sm:border-[#dcca8759] border-[#dcca8796] sm:p-5 p-3 rounded-xl hover:scale-[1.1] transition-all duration-300 sm:hover:border-[#DCCA87]'>
+            <div className='child sm:border border-r border-b sm:border-[#dcca8759] border-[#dcca8796] sm:p-5 p-3 rounded-xl sm:hover:scale-[1.1] transition-all duration-300 sm:hover:border-[#DCCA87]'>
               <div className="name bg-[#171717] w-fit flex flex-row-reverse sm:flex-row gap-3 items-center justify-center sm:mt-[-53px] mt-[-35px] ml-auto sm:ml-1">
                 <div className="img sm:w-[60px] w-[40px] sm:h-[60px] h-[40px] bg-[#373738] overflow-hidden rounded-xl">
                     <img src={client02} alt="" />
@@ -123,7 +165,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className='child sm:border border-l border-b sm:border-[#dcca8759] border-[#dcca8796] sm:p-5 p-3 rounded-xl hover:scale-[1.1] transition-all duration-300 sm:hover:border-[#DCCA87]'>
+            <div className='child sm:border border-l border-b sm:border-[#dcca8759] border-[#dcca8796] sm:p-5 p-3 rounded-xl sm:hover:scale-[1.1] transition-all duration-300 sm:hover:border-[#DCCA87]'>
               <div className="name bg-[#171717] w-fit flex gap-3 items-center justify-start sm:mt-[-53px] mt-[-35px] ml-1">
                 <div className="img sm:w-[60px] w-[40px] sm:h-[60px] h-[40px] bg-[#373738] overflow-hidden rounded-xl">
                     <img src={client03} alt="" />

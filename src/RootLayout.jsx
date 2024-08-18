@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 const RootLayout = () => {
   return (
     <div className='sm:flex sm:gap-7 gap-4'>
-        <div>
+        <div className=''>
         <Sidebar />
         </div>
 
