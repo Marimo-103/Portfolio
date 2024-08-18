@@ -60,7 +60,7 @@ const Sidebar = () => {
             <div className='text-base text-[#d5d5d5] font-Outfit'>
               GitHub
             </div>
-            <a href='https://github.com/Marimo-103' className='text-sm text-white font-Outfit'>
+            <a href='https://github.com/Marimo-103' target='_blank' className='text-sm text-white font-Outfit'>
               Marimo-103
             </a>
           </div>
@@ -73,7 +73,7 @@ const Sidebar = () => {
             <div className='text-base text-[#d5d5d5] font-Outfit'>
               LinkedIn
             </div>
-            <a href='mailto:m.2091hasan@gmail.com' className='text-sm text-white font-Outfit'>
+            <a href='#' target='_blank' className='text-sm text-white font-Outfit'>
               Mahmudul
             </a>
           </div>

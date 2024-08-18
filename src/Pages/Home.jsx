@@ -6,7 +6,6 @@ import { TbDeviceDesktopCode } from 'react-icons/tb'
 import client01 from '/Home Images/avatar-1.png'
 import client02 from '/Home Images/avatar-2.png'
 import client03 from '/Home Images/avatar-3.png'
-import Profile from '../Layers/profile'
 import { ImStack } from 'react-icons/im'
 
 
