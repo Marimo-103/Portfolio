@@ -14,10 +14,10 @@ const Navbar = () => {
           <div className="menu bg-[#373738] sm:py-4 py-2 rounded-tr-[10px] sm:rounded-tr-[14px] sm:rounded-tl-none rounded-tl-[10px] sm:rounded-bl-[10px] w-full sm:w-auto">
             <ul className='flex items-center justify-between sm:gap-12 sm:mx-8 mx-4'>
               <Li value='About Me' to='/'/>
-              <Li value='Resume' to='/'/>
-              <Li value='Portfolio' to='/'/>
-              <Li value='Blog' to='/'/>
-              <Li value='Contact' to='/'/>
+              <Li value='Resume' to='/resume'/>
+              <Li value='Portfolio' to='/portfolio'/>
+              <Li value='Blog' to='/blog'/>
+              <Li value='Contact' to='/contact'/>
             </ul>
           </div>
         </div>

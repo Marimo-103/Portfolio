@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import RootLayout from './RootLayout';
 import Home from './Pages/Home';
+import Resume from './Pages/Resume';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
       element={<RootLayout />}
     >
       <Route index  element={ <Home /> }/>
+      <Route path='/resume'  element={ <Resume /> }/>
 
     </Route>
   )

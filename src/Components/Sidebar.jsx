@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BsTwitterX } from 'react-icons/bs'
 import { FaAngleDown, FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, } from 'react-icons/fa'
 import { MdPhoneAndroid } from 'react-icons/md'
@@ -6,8 +6,13 @@ import { TbMailFilled } from 'react-icons/tb'
 import watashi1 from '/Common Images/MHE.png'
 
 const Sidebar = () => {
+  let [showEmails, setShowEmails] = useState(false)
+
+  let toggleEmails = () => {
+    setShowEmails(!showEmails);
+  };
   return (
-    <div className='bg-[#171717] sm:py-10 sm:px-4 p-3 sm:rounded-[14px] rounded-[10px] flex sm:flex-col sm:gap-10 justify-start sm:justify-center items-center relative  shadow-[22px_30px_95px_1px_rgba(0, 0, 0, 0.70)]'>
+    <div className='bg-[#171717] sm:py-10 sm:px-4 p-3 sm:rounded-[14px] rounded-[10px] flex flex-col sm:gap-10 gap-5 justify-start sm:justify-center sm:items-center items-start relative shadow-[22px_30px_95px_1px_rgba(0, 0, 0, 0.70)]'>
       <div className="profile flex sm:flex-col items-center justify-center sm:gap-8 gap-5">
         <div className="img bg-[#373738] sm:rounded-[14px] rounded-[10px] w-[80px] h-[80px] sm:w-[150px] sm:h-[150px] overflow-hidden">
           <img src={watashi1} alt="" className='bg-[#0000007f]'/>
@@ -21,74 +26,77 @@ const Sidebar = () => {
         </div>
         </div>
       </div>
-      <div className="drop absolute top-0 right-0 sm:hidden flex justify-center items-center p-1 bg-[#373738] rounded-s-none rounded-tr-[10px] rounded-bl-[10px]">
+      <div onClick={toggleEmails} className="drop absolute top-0 right-0 sm:hidden flex justify-center items-center p-1 bg-[#373738] rounded-s-none rounded-tr-[10px] rounded-bl-[10px]">
       <FaAngleDown className='text-[#FCD980]'/>
       </div>
-      <div className="line hidden sm:flex w-[90%] h-[1px] bg-slate-400"></div>
-      <div className="contacts hidden sm:flex flex-col gap-8 items-start justify-center">
-        <div className="child flex items-center justify-center gap-4">
-          <div className="icon p-2  bg-[#373738] rounded-lg">
-            <TbMailFilled className='text-lg text-[#FCD980]'/>
-          </div>
-          <div className="text">
-            <div className='text-base text-[#d5d5d5] font-Outfit'>
-              Email
+      <div className={`flex flex-col sm:gap-10 gap-5 justify-start sm:justify-center sm:items-center items-start w-full transition-all duration-500 ease-in-out overflow-hidden ${showEmails ? 'max-h-fit' : 'max-h-0 sm:max-h-fit'}`}>
+        <div className="line flex sm:w-[90%] w-full h-[1px] bg-slate-400"></div>
+        <div className="contacts flex flex-col sm:gap-7 gap-4 items-start justify-center">
+          <div className="child flex items-center justify-center sm:gap-4 gap-3">
+            <div className="icon p-1 sm:p-2  bg-[#373738] rounded-md sm:rounded-lg">
+              <TbMailFilled className='text-base sm:text-lg text-[#FCD980]'/>
             </div>
-            <a href='mailto:m.2091hasan@gmail.com' className='text-sm text-white font-Outfit'>
-              mahmudulhasan@gmail.com
-            </a>
+            <div className="text flex flex-col">
+              <div className='sm:text-base text-sm text-[#d5d5d5] font-Outfit'>
+                Email
+              </div>
+              <a href='mailto:m.2091hasan@gmail.com' className='sm:text-sm text-xs text-white font-Outfit'>
+                mahmudulhasan@gmail.com
+              </a>
+            </div>
+          </div>
+          <div className="child flex items-center justify-center sm:gap-4 gap-3">
+            <div className="icon p-1 sm:p-2  bg-[#373738] rounded-md sm:rounded-lg">
+              <MdPhoneAndroid className='text-base sm:text-lg text-[#FCD980]'/>
+            </div>
+            <div className="text flex flex-col">
+              <div className='sm:text-base text-sm text-[#d5d5d5] font-Outfit'>
+                Phone
+              </div>
+              <a href='tel:+881307838018' className='sm:text-sm text-xs text-white font-Outfit'>
+              +881307838018
+              </a>
+            </div>
+          </div>
+          <div className="child flex items-center justify-center sm:gap-4 gap-3">
+            <div className="icon p-1 sm:p-2  bg-[#373738] rounded-md sm:rounded-lg">
+              <FaGithub className='text-base sm:text-lg text-[#FCD980]'/>
+            </div>
+            <div className="text flex flex-col">
+              <div className='sm:text-base text-sm text-[#d5d5d5] font-Outfit'>
+                GitHub
+              </div>
+              <a href='https://github.com/Marimo-103' target='_blank' className='sm:text-sm text-xs text-white font-Outfit'>
+                Marimo-103
+              </a>
+            </div>
+          </div>
+          <div className="child flex items-center justify-center sm:gap-4 gap-3">
+            <div className="icon p-1 sm:p-2  bg-[#373738] rounded-md sm:rounded-lg">
+              <FaLinkedinIn className='text-base sm:text-lg text-[#FCD980]'/>
+            </div>
+            <div className="text flex flex-col">
+              <div className='sm:text-base text-sm text-[#d5d5d5] font-Outfit'>
+                LinkedIn
+              </div>
+              <a href='#' target='_blank' className='sm:text-sm text-xs text-white font-Outfit'>
+                Mahmudul
+              </a>
+            </div>
           </div>
         </div>
-        <div className="child flex items-center justify-center gap-4">
-          <div className="icon p-2  bg-[#373738] rounded-lg">
-            <MdPhoneAndroid className='text-lg text-[#FCD980]'/>
-          </div>
-          <div className="text">
-            <div className='text-base text-[#d5d5d5] font-Outfit'>
-              Phone
-            </div>
-            <a href='tel:+881307838018' className='text-sm text-white font-Outfit'>
-            +881307838018
-            </a>
-          </div>
+        <div className="line flex sm:w-[90%] w-full h-[1px] bg-slate-400"></div>
+        <div className="socials flex items-center justify-center gap-4 text-[#FCD980] sm:m-0 ml-auto">
+          <a href="">
+          <FaFacebookF />
+          </a>
+          <a href="">
+          <BsTwitterX />
+          </a>
+          <a href="">
+          <FaInstagram />
+          </a>
         </div>
-        <div className="child flex items-center justify-center gap-4">
-          <div className="icon p-2  bg-[#373738] rounded-lg">
-            <FaGithub className='text-lg text-[#FCD980]'/>
-          </div>
-          <div className="text">
-            <div className='text-base text-[#d5d5d5] font-Outfit'>
-              GitHub
-            </div>
-            <a href='https://github.com/Marimo-103' target='_blank' className='text-sm text-white font-Outfit'>
-              Marimo-103
-            </a>
-          </div>
-        </div>
-        <div className="child flex items-center justify-center gap-4">
-          <div className="icon p-2  bg-[#373738] rounded-lg">
-            <FaLinkedinIn className='text-lg text-[#FCD980]'/>
-          </div>
-          <div className="text">
-            <div className='text-base text-[#d5d5d5] font-Outfit'>
-              LinkedIn
-            </div>
-            <a href='#' target='_blank' className='text-sm text-white font-Outfit'>
-              Mahmudul
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="socials hidden sm:flex items-center justify-center gap-4 text-[#FCD980]">
-        <a href="">
-        <FaFacebookF />
-        </a>
-        <a href="">
-        <BsTwitterX />
-        </a>
-        <a href="">
-        <FaInstagram />
-        </a>
       </div>
     </div>
   )

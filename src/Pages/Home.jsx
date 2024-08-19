@@ -17,7 +17,7 @@ const Home = () => {
         <div className="main">
           <p className='sm:text-lg text-base text-[#F5F5F3] font-Josefin relative tracking-[0.22px] leading-[130%]'>
           <span className='text-2xl sm:text-4xl'>H</span>ello, I'm <div className='text-[#DCCA87] sm:text-xl text-lg font-semibold tracking-[0.32px] inline-block font-Outfit'>Mahmudul Hasan</div>! A passionate Web Developer and Designer with a knack for creating dynamic and responsive web applications. <br /><br />
-          As a dedicated Web Developer and Designer, I specialize in building user-friendly and visually appealing websites. With a strong foundation in <span className='bg-[#dcca8758] p-[2px]'>React, Tailwind CSS and Figma</span>, I blend technical skills with creative design to deliver exceptional web solutions. My journey in web development and design is driven by creativity and a desire to make the web a better place. Dive into my portfolio to see my work and learn more about my skills and experiences.
+          With a strong foundation in <span className='bg-[#dcca8758] p-[2px]'>React, Tailwind CSS and Figma</span>, I blend technical skills with creative design to deliver exceptional web solutions. Dive into my portfolio to see my work and learn more about my skills and experiences.
           </p>
         </div>
       </section>
