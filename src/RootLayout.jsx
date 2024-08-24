@@ -5,12 +5,12 @@ import { Outlet } from 'react-router-dom'
 
 const RootLayout = () => {
   return (
-    <div className='sm:flex sm:gap-7 gap-4'>
+    <div className='md:flex md:gap-7 gap-4'>
         <div className=''>
         <Sidebar />
         </div>
 
-        <div className='flex flex-col mt-4 sm:mt-0 sm:w-[1295px] relative'>
+        <div className='flex flex-col mt-4 md:mt-0 md:w-[1295px] relative'>
         <Navbar />
 
         <Outlet />
