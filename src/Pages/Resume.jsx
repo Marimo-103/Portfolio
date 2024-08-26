@@ -105,45 +105,75 @@ const Resume = () => {
                 <h2 className='text-2xl md:text-4xl text-[#FFF] font-Josefin font-bold md:font-semibold tracking-[0.55px] mb-5'>
                     My Skills
                 </h2>
-                <div className="box p-5 md:rounded-[14px] rounded-[8px] bg-[#262627] w-full md:w-[90%] flex flex-col gap-5">
-                    <div className="child flex flex-col gap-2">
-                        <p className='text-base md:text-lg text-white font-Outfit'>
-                            Figma
-                        </p>
-                        <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
-                            <div className="fill w-[80%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                <div className="flex md:flex-row flex-col gap-x-4 gap-y-8">
+                    <div className='md:w-[50%] w-[95%]'>
+                        <h3 className='text-lg md:text-xl text-[#FFF] font-Outfit font-semibold md:font-medium tracking-[0.55px] mb-4 ml-2'>
+                            Basic Languages
+                        </h3>
+                        <div className="box p-5 md:rounded-[14px] rounded-[8px] bg-[#262627] w-full md:w-[90%] flex flex-col gap-5">
+                        <div className="child flex flex-col gap-2">
+                            <p className='text-base md:text-lg text-white font-Outfit'>
+                                Figma
+                            </p>
+                            <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
+                                <div className="fill w-[80%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                            </div>
+                        </div>
+                        <div className="child flex flex-col gap-2">
+                            <p className='text-base md:text-lg text-white font-Outfit'>
+                                HTML
+                            </p>
+                            <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
+                                <div className="fill w-[94%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                            </div>
+                        </div>
+                        <div className="child flex flex-col gap-2">
+                            <p className='text-base md:text-lg text-white font-Outfit'>
+                                CSS
+                            </p>
+                            <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
+                                <div className="fill w-[80%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                            </div>
+                        </div>
+                        <div className="child flex flex-col gap-2">
+                            <p className='text-base md:text-lg text-white font-Outfit'>
+                                JavaScript
+                            </p>
+                            <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
+                                <div className="fill w-[69%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                            </div>
+                        </div>
                         </div>
                     </div>
-                    <div className="child flex flex-col gap-2">
-                        <p className='text-base md:text-lg text-white font-Outfit'>
-                            HTML, CSS
-                        </p>
-                        <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
-                            <div className="fill w-[94%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                    <div className='md:w-[50%] w-[95%]'>
+                        <h3 className='text-lg md:text-xl text-[#FFF] font-Outfit font-semibold md:font-medium tracking-[0.55px] mb-4 ml-2'>
+                            Libraries & Frameworks
+                        </h3>
+                        <div className="box p-5 md:rounded-[14px] rounded-[8px] bg-[#262627] w-full md:w-[90%] flex flex-col gap-5">
+                        <div className="child flex flex-col gap-2">
+                            <p className='text-base md:text-lg text-white font-Outfit'>
+                                Bootstrap
+                            </p>
+                            <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
+                                <div className="fill w-[88%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="child flex flex-col gap-2">
-                        <p className='text-base md:text-lg text-white font-Outfit'>
-                            Tailwind, Bootstrap
-                        </p>
-                        <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
-                            <div className="fill w-[80%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                        <div className="child flex flex-col gap-2">
+                            <p className='text-base md:text-lg text-white font-Outfit'>
+                                TailwindCSS
+                            </p>
+                            <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
+                                <div className="fill w-[80%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="child flex flex-col gap-2">
-                        <p className='text-base md:text-lg text-white font-Outfit'>
-                            JavaScript
-                        </p>
-                        <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
-                            <div className="fill w-[69%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                        <div className="child flex flex-col gap-2">
+                            <p className='text-base md:text-lg text-white font-Outfit'>
+                                REACT Js
+                            </p>
+                            <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
+                                <div className="fill w-[55%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="child flex flex-col gap-2">
-                        <p className='text-base md:text-lg text-white font-Outfit'>
-                            REACT Js
-                        </p>
-                        <div className="fill w-full h-[5px] bg-[#5b5b5d] rounded-2xl">
-                            <div className="fill w-[55%] h-[5px] bg-gradient-to-r from-[#b09636] to-[#DCCA87] rounded-2xl"></div>
                         </div>
                     </div>
                 </div>
