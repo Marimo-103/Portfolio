@@ -10,7 +10,7 @@ const Project = ({ProjectTitle, tag, src}) => {
   return (
     <>
       <div className="box rounded-[10px] md:rounded-[14px] bg-[#262627]">
-        <div className="img md:w-[370px] md:h-[370px] w-[170px] h-[170px]">
+        <div className="img md:w-[350px] md:h-[350px] w-[170px] h-[170px]">
           <img src={src} alt="" className='w-full h-full rounded-tl-[10px] rounded-tr-[10px] md:rounded-tl-[14px] md:rounded-tr-[14px]'/>
         </div>
         <div className="text p-2 md:p-4">
@@ -31,7 +31,7 @@ const Portfolio = () => {
   let [activeTab, setActiveTab] = useState('all')
 
   return (
-    <div className='bg-[#171717] rounded-bl-[10px] rounded-br-[10px] md:rounded-bl-[14px] md:rounded-br-[14px]'>
+    <div className='bg-[#171717] rounded-bl-[10px] rounded-br-[10px] md:rounded-bl-[14px] md:rounded-br-[14px] pb-5'>
       <div className="crumbs flex gap-5 md:gap-12 items-center justify-start pt-12 md:px-5 px-2">
         <p onClick={()=> setActiveTab('all')} className={`md:text-lg text-sm font-Josefin md:font-medium tracking-[0.45px] cursor-pointer ${ activeTab === 'all' ? "text-[#DCCA87]" : "text-[#F5F5F3]"}`}>
           All

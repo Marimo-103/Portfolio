@@ -1,6 +1,10 @@
 import React from 'react'
 import { HiOutlineBriefcase } from 'react-icons/hi'
 import { IoBookOutline } from 'react-icons/io5'
+import { PiDownloadBold } from 'react-icons/pi'
+import Button from '../Layers/Button'
+import resume from '/Common Images/MahmudulResume (1).pdf'
+
 
 const Resume = () => {
   return (
@@ -97,6 +101,23 @@ const Resume = () => {
                     </p>
                 </div> */}
             </div>
+        </section>
+
+        <section id="resume" className='pt-16 md:px-5 mb-4 px-2'>
+            <div className="main ml-4">
+                <h2 className='text-2xl md:text-4xl text-[#FFF] font-Josefin font-bold md:font-semibold tracking-[0.55px] mb-7'>
+                    Doccuments 
+                </h2>
+                <div className="flex sm:gap-8 sm:justify-normal justify-between">
+                    <div className="resume">
+                        <Button href={resume} text={'Download Resume'}/>
+                    </div>
+                    <div className="CV">
+                        <Button href={resume} text={'Download CV'}/>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         {/* skills bar */}
