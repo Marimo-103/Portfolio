@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { HiOutlineBriefcase } from 'react-icons/hi'
 import { IoBookOutline } from 'react-icons/io5'
 import { PiDownloadBold } from 'react-icons/pi'
@@ -200,6 +200,8 @@ const Resume = () => {
                 </div>
             </div>
         </section>
+
+        
     </div>
   )
 }

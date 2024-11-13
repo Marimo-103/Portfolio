@@ -79,7 +79,7 @@ const Sidebar = () => {
               <div className='md:text-base text-sm text-[#d5d5d5] font-Outfit'>
                 LinkedIn
               </div>
-              <a href='#' target='_blank' className='md:text-sm text-xs text-white font-Outfit'>
+              <a href='https://www.linkedin.com/in/mahmudulhasan2091/' target='_blank' className='md:text-sm text-xs text-white font-Outfit'>
                 Mahmudul
               </a>
             </div>
