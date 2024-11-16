@@ -22,7 +22,7 @@ const Sidebar = () => {
           Mahmudul Hasan
         </div>
         <div className="tag md:text-base text-xs text-[#F5F5F5] font-Outfit font-light md:tracking-[0.92px] tracking-[0.52px] bg-[#373738] px-4 py-1 md:py-[6px] md:rounded-[8px] rounded-[5px]">
-          Web Developer
+          Frontend Web Developer
         </div>
         </div>
       </div>

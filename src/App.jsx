@@ -9,6 +9,7 @@ import RootLayout from './RootLayout';
 import Home from './Pages/Home';
 import Resume from './Pages/Resume';
 import Portfolio from './Pages/Portfolio';
+import Contact from './Pages/Contact';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route index  element={ <Home /> }/>
       <Route path='/resume'  element={ <Resume /> }/>
       <Route path='/portfolio'  element={ <Portfolio /> }/>
+      <Route path='/contact'  element={ <Contact /> }/>
 
     </Route>
   )

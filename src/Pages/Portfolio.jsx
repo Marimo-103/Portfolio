@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { TbHandClick } from "react-icons/tb";
+import "animate.css/animate.min.css";
 
 const Project = ({ ProjectTitle, tag, src, href }) => {
   return (
@@ -54,7 +55,8 @@ const Portfolio = () => {
       projectTitle: "WebFlow Agency",
       projectType: "Web Design",
       src: "/Projects/Web Designs/Finsweet.png",
-      liveLink: "https://www.figma.com/design/xnQ6DSvOkYcgkRBtbH0B07/Webflow-Agency)---Finsweet?node-id=0-1&m=dev",
+      liveLink:
+        "https://www.figma.com/design/xnQ6DSvOkYcgkRBtbH0B07/Webflow-Agency)---Finsweet?node-id=0-1&m=dev",
     },
     {
       id: 4,
@@ -68,7 +70,8 @@ const Portfolio = () => {
       projectTitle: "Organic Store",
       projectType: "Web Design",
       src: "/Projects/Web Designs/Organic.png",
-      liveLink: "https://www.figma.com/design/ypq1Re5ds8g3CzjkOEGbos/Organic-store-design?node-id=0-1&m=dev",
+      liveLink:
+        "https://www.figma.com/design/ypq1Re5ds8g3CzjkOEGbos/Organic-store-design?node-id=0-1&m=dev",
     },
     {
       id: 6,
@@ -82,28 +85,32 @@ const Portfolio = () => {
       projectTitle: "Orebi E-commerce",
       projectType: "Web Design",
       src: "/Projects/Web Designs/Orebi.jpg",
-      liveLink: "https://www.figma.com/design/OrCQOOAEbAeufB43XMYWw0/Orebi-E-Commerce-site-design?node-id=0-1&m=dev",
+      liveLink:
+        "https://www.figma.com/design/OrCQOOAEbAeufB43XMYWw0/Orebi-E-Commerce-site-design?node-id=0-1&m=dev",
     },
     {
       id: 8,
       projectTitle: "Tech store E-commerce",
       projectType: "Web Design",
       src: "/Projects/Web Designs/Tech.png",
-      liveLink: "https://www.figma.com/design/NdqWBx6RU1mZeDrOkE65Kx/eCommerce-design---Tech-Store?node-id=212-23183&m=dev",
+      liveLink:
+        "https://www.figma.com/design/NdqWBx6RU1mZeDrOkE65Kx/eCommerce-design---Tech-Store?node-id=212-23183&m=dev",
     },
     {
       id: 9,
       projectTitle: "Brand Store",
       projectType: "Web Design",
       src: "/Projects/Web Designs/Fresh.png",
-      liveLink: "https://www.figma.com/design/W0tkTXFDUKSuKXQRnGh4eK/Fashion-website-design?node-id=0-1&m=dev",
+      liveLink:
+        "https://www.figma.com/design/W0tkTXFDUKSuKXQRnGh4eK/Fashion-website-design?node-id=0-1&m=dev",
     },
     {
       id: 10,
       projectTitle: "Landing page",
       projectType: "Web Design",
       src: "/Projects/Web Designs/Upland.png",
-      liveLink: "https://www.figma.com/design/Htb7IDxCP9wDQUO0Hxc9Se/Upland---Mobile-App-Landing-Page?node-id=0-1&m=dev",
+      liveLink:
+        "https://www.figma.com/design/Htb7IDxCP9wDQUO0Hxc9Se/Upland---Mobile-App-Landing-Page?node-id=0-1&m=dev",
     },
     {
       id: 11,
@@ -121,32 +128,58 @@ const Portfolio = () => {
       (activeTab === "dev" && project.projectType === "Web Development")
   );
 
+  const [isLoaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
-    <div className="bg-[#171717] rounded-bl-[10px] rounded-br-[10px] md:rounded-bl-[14px] md:rounded-br-[14px] pb-5">
-      <div className="crumbs flex gap-5 md:gap-12 items-center justify-start pt-12 md:px-5 px-2">
+    <div className={`bg-[#171717] rounded-bl-[10px] rounded-br-[10px] md:rounded-bl-[14px] md:rounded-br-[14px] pb-5 ${isLoaded ? "animate__animated animate__fadeIn" : ""}`}>
+      <div className="crumbs flex gap-4 md:gap-12 items-center justify-start pt-12 pb-2 md:mx-5 mx-2 border-b border-[#94a3b8 ]">
         <p
           onClick={() => setActiveTab("all")}
-          className={`md:text-lg text-sm font-Josefin md:font-medium tracking-[0.45px] cursor-pointer ${
+          className={`md:text-lg text-base font-Josefin md:font-medium tracking-[0.45px] whitespace-nowrap cursor-pointer ${
             activeTab === "all" ? "text-[#DCCA87]" : "text-[#F5F5F3]"
           }`}
         >
-          All
+          All{""}
+          <span className="md:text-sm text-xs text-white">
+            ({projectCards.length})
+          </span>
         </p>
         <p
           onClick={() => setActiveTab("design")}
-          className={`md:text-lg text-sm font-Josefin md:font-medium tracking-[0.45px] cursor-pointer ${
+          className={`md:text-lg text-base font-Josefin md:font-medium tracking-[0.45px] whitespace-nowrap cursor-pointer ${
             activeTab === "design" ? "text-[#DCCA87]" : "text-[#F5F5F3]"
           }`}
         >
-          Web Designs
+          Web Designs{""}
+          <span className="md:text-sm text-xs text-white">
+            (
+            {
+              projectCards.filter(
+                (project) => project.projectType === "Web Design"
+              ).length
+            }
+            )
+          </span>
         </p>
         <p
           onClick={() => setActiveTab("dev")}
-          className={`md:text-lg text-sm font-Josefin md:font-medium tracking-[0.45px] cursor-pointer ${
+          className={`md:text-lg text-base font-Josefin md:font-medium tracking-[0.45px] whitespace-nowrap cursor-pointer ${
             activeTab === "dev" ? "text-[#DCCA87]" : "text-[#F5F5F3]"
           }`}
         >
-          Web Developments
+          Web Developments{""}
+          <span className="md:text-sm text-xs text-white">
+            (
+            {
+              projectCards.filter(
+                (project) => project.projectType === "Web Development"
+              ).length
+            }
+            )
+          </span>
         </p>
       </div>
 
@@ -180,7 +213,7 @@ const Portfolio = () => {
           exit={{ opacity: 0 }}
         >
           <section id="webDev" className="pt-12 md:px-5 px-2">
-          <div className="main grid md:grid-cols-3 grid-cols-2 gap-y-6 md:gap-y-16 gap-x-6">
+            <div className="main grid md:grid-cols-3 grid-cols-2 gap-y-6 md:gap-y-16 gap-x-6">
               {filteredProjects.map((item) => (
                 <Project
                   key={item.id}
@@ -202,7 +235,7 @@ const Portfolio = () => {
           exit={{ opacity: 0 }}
         >
           <section id="webDesign" className="pt-12 md:px-5 px-2">
-          <div className="main grid md:grid-cols-3 grid-cols-2 gap-y-6 md:gap-y-16 gap-x-6">
+            <div className="main grid md:grid-cols-3 grid-cols-2 gap-y-6 md:gap-y-16 gap-x-6">
               {filteredProjects.map((item) => (
                 <Project
                   key={item.id}

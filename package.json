@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-animate-on-scroll": "^2.1.8",
+    "animate.css": "^4.1.1",
     "framer-motion": "^11.3.31",
     "react": "^18.3.1",
+    "react-animate-on-scroll": "^2.1.9",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.0",
